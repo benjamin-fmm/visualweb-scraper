@@ -8,7 +8,7 @@ Versión extendida del scraper original, con soporte adicional para:
 Mantiene todas las funciones originales (detección de gifs, botones, sonidos, cursores, background colors, etc.).
 
 USO
-    python indiescraper_v7.py -i linktest.txt -o resultados.xlsx -f xlsx -d 1.0
+    python webscraper_v7.py --input urls.txt --output datos.xlsx-f xlsx -d 1.0  
 DEPENDENCIAS
     pip install requests beautifulsoup4 lxml langdetect tinycss2 cssutils pandas openpyxl tldextract
 """
@@ -740,4 +740,5 @@ def main():
     logging.info(f"Guardado {len(results)} filas en {out}")
 
 if __name__ == "__main__":
+
     main()
