@@ -14,7 +14,7 @@ Durante el proceso, emergió la necesidad de construir un sistema capaz de extra
 Esto dio origen a una herramienta digital que se divide en dos partes:
 
 - Scraping estructural (metadatos, estilo css, presencia de .gif, idioma, texto visible, atributos HTML)
-- Scraping visual (captura de pantalla, paleta de color, proporciones de color, mapa de saliencia)
+- [Scraping visual](src/visualscraper_v2.py) (captura de pantalla, paleta de color, proporciones de color, mapa de saliencia)
 - AMBOS con normalización de datos para análisis documental (explicabilidad y visualización)
 
 El proyecto evolucionó, tomando una fuerte gravitación hacia el aspecto metodológico que abría esta herramienta.
