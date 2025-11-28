@@ -148,7 +148,7 @@ Carpeta heatmaps/ → mapa de saliencia (rojo: alta atención, azul: baja atenci
 resumen_colores.pdf → PDF con screenshots + heatmap + paleta + porcentajes para cada link ingresado  
 colores.xlsx(.csv) → columnas para cada página web con los códigos hexadecimales y porcentajes de dominancia exactos para cada color
 
-### Notas metodológicas breves
+## Notas metodológicas
 
 Este proyecto forma parte de un estudio exploratorio que combina análisis documental, herramientas digitales y recolección automatizada de datos. La herramienta está pensada para:
 
