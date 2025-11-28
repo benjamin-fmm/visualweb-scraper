@@ -13,7 +13,7 @@ Este repositorio contiene las herramientas desarrolladas durante mi investigaci�
 Durante el proceso, emergió la necesidad de construir un sistema capaz de extraer datos en masa desde un corpus amplio de páginas web personales.
 Esto dio origen a una herramienta digital que se divide en dos partes:
 
-- Scraping estructural (metadatos, estilo css, presencia de .gif, idioma, texto visible, atributos HTML)
+- [Scraping estructural](src/webscraper_v7.py) (metadatos, estilo css, presencia de .gif, idioma, texto visible, atributos HTML)
 - [Scraping visual](src/visualscraper_v2.py) (captura de pantalla, paleta de color, proporciones de color, mapa de saliencia)
 - AMBOS con normalización de datos para análisis documental (explicabilidad y visualización)
 
@@ -97,7 +97,7 @@ playwright install chromium
 ```
 IMPORTANTE: Versión de Python
 
-La herramienta requiere Python ≤ 3.12
+La herramienta requiere [Python ≤ 3.12](https://www.python.org/downloads/release/python-31210/)
 
 Esto se debe a incompatibilidades conocidas entre numpy, opencv-python y opencv-contrib-python en versiones más recientes.
 
@@ -118,7 +118,7 @@ pyenv local 3.12
 # Uso
 
 Scraper estructural
-python src/webscraper_v7.py
+[webscraper_v7.py](src/webscraper_v7.py)
 
 ```
 python webscraper_v7.py --input urls.txt --output datos.xlsx
@@ -131,7 +131,7 @@ Salida:
 Un CSV/XLSX con columnas de metadatos, estilos (colores, fuentes, gradientes), imágenes especiales (blinkies, botones, etc.), idioma, tags, fechas y más.
 
 Scraper visual
-python src/visualscraper_v2.py
+[visualscraper_v2.py](src/visualscraper_v2.py)
 ```
 python visualscraper_v2.py --input urls.txt --output colores.xlsx --format xlsx --colors 5
 ```
