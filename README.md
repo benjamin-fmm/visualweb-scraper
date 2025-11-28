@@ -123,9 +123,9 @@ python src/webscraper_v7.py
 ```
 python webscraper_v7.py --input urls.txt --output datos.xlsx
 ```
-Argumentos:
---input → archivo con URLs (una por línea)
---output → archivo CSV o XLSX generado
+Argumentos:  
+--input → archivo con URLs (una por línea)  
+--output → archivo CSV o XLSX generado  
 
 Salida:
 Un CSV/XLSX con columnas de metadatos, estilos (colores, fuentes, gradientes), imágenes especiales (blinkies, botones, etc.), idioma, tags, fechas y más.
@@ -135,26 +135,26 @@ python src/visualscraper_v2.py
 ```
 python visualscraper_v2.py --input urls.txt --output colores.xlsx --format xlsx --colors 5
 ```
-Argumentos:
---input → archivo de URLs
---output → archivo CSV/XLSX con resultados
---colors → número de colores dominantes a extraer
+Argumentos:  
+--input → archivo de URLs  
+--output → archivo CSV/XLSX con resultados  
+--colors → número de colores dominantes a extraer  
 --format → csv o xlsx
 
-Salida:
-Carpeta screenshots/ → capturas completas de cada web
-Carpeta palettes/ → imagen del cluster de paleta de colores
-Carpeta heatmaps/ → mapa de saliencia (rojo: alta atención, azul: baja atención)
-resumen_colores.pdf → PDF con screenshots + heatmap + paleta + porcentajes para cada link ingresado
+Salida:  
+Carpeta screenshots/ → capturas completas de cada web  
+Carpeta palettes/ → imagen del cluster de paleta de colores  
+Carpeta heatmaps/ → mapa de saliencia (rojo: alta atención, azul: baja atención)  
+resumen_colores.pdf → PDF con screenshots + heatmap + paleta + porcentajes para cada link ingresado  
 colores.xlsx(.csv) → columnas para cada página web con los códigos hexadecimales y porcentajes de dominancia exactos para cada color
 
 ### Notas metodológicas breves
 
 Este proyecto forma parte de un estudio exploratorio que combina análisis documental, herramientas digitales y recolección automatizada de datos. La herramienta está pensada para:
 
-reducir sesgos en la observación
-sistematizar corpus grandes
-facilitar análisis comparativos
-generar datos sólidos para fundamentar un marco teórico futuro
+reducir sesgos en la observación  
+sistematizar corpus grandes  
+facilitar análisis comparativos  
+generar datos sólidos para fundamentar un marco teórico futuro  
 
 El repositorio es tanto una herramienta funcional como evidencia del proceso investigativo.
