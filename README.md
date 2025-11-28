@@ -6,7 +6,7 @@ Año: 2025
 Contexto: Proyecto de Seminario — Carrera de Diseño  
 Profesor guía: Jacob Bustamante
 
-### Descripción general del proyecto
+## Descripción general del proyecto
 
 Este repositorio contiene las herramientas desarrolladas durante mi investigación de Seminario, cuyo propósito inicial consistía en explorar rasgos visuales, estructurales y expresivos de la web independiente contemporánea (especialmente dentro de Neocities).
 
@@ -20,7 +20,7 @@ Esto dio origen a una herramienta digital que se divide en dos partes:
 El proyecto evolucionó, tomando una fuerte gravitación hacia el aspecto metodológico que abría esta herramienta.
 Este repositorio documenta la herramienta, su código y muestras de salida.
 
-## Objetivo de la herramienta (actualmente)
+### Objetivo de la herramienta (actualmente)
 
 Proveer un pipeline que permita analizar corpus grandes de páginas web indie mediante extracción automatizada, especialmente útil en metodologías de:
 
@@ -29,7 +29,7 @@ Proveer un pipeline que permita analizar corpus grandes de páginas web indie me
 - estética digital
 - estudios de la web independiente
 
-### Características principales
+## Características principales
 
 Scraper estructural (webscraper_v7.py)
 
@@ -81,13 +81,13 @@ webscraper — Extrae metadatos, estilos, imágenes, sonidos, blinkies, botones,
 
 visualscraper — Captura pantallas, genera paletas de color y crea mapas de saliencia tipo heatmap, más un PDF resumen.
 
-1. Crear entorno virtual (opcional, pero recomendado)
+1. Crear entorno virtual (opcional, pero recomendado si es pertinente)
 ```
 python -m venv venv
 source venv/bin/activate   # Linux/MacOS
 venv\Scripts\activate      # Windows
 ```
-3. Instalar dependencias
+2. Instalar dependencias
 ```
 pip install -r requirements.txt
 ```
@@ -127,7 +127,7 @@ Argumentos:
 --input → archivo con URLs (una por línea)  
 --output → archivo CSV o XLSX generado  
 
-Salida:
+Salida:  
 Un CSV/XLSX con columnas de metadatos, estilos (colores, fuentes, gradientes), imágenes especiales (blinkies, botones, etc.), idioma, tags, fechas y más.
 
 Scraper visual
