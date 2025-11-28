@@ -9,7 +9,7 @@ Versión extendida de color_scraper que:
 - Genera un PDF visual con la captura, paleta y porcentajes.
 
 USO:
-  python visualscraper_v2.py --input neo_es_links.txt --output colores.xlsx --format xlsx --colors 5
+  python visualscraper_v2.py --input urls.txt --output colores.xlsx --format xlsx --colors 5
 
 DEPENDENCIAS:
   pip install playwright pillow numpy pandas scikit-learn matplotlib reportlab opencv-python opencv-contrib-python openpyxl
@@ -249,3 +249,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
